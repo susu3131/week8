@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    <%- title %>
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar  navbar-expand-lg navbar-light  bg-primary border-bottom pt-4 pb-4 pt-md-0 pb-md-0 ">
+    <div class="container ">
+      <a class="navbar-brand flex-grow-1" href="index.html"><img class="w-50" src="./assets/images/logo.svg" alt=""
+          ></a>
+      <div class="d-flex align-items-center">
+        <i class="fa-solid fa-magnifying-glass pe-5 text-black fs-5 d-md-none" ></i>
+        <button class="navbar-toggler p-0 border-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse  flex-grow-0 ">
+        <form class="d-flex align-items-center ">
+          <input class="form-control me-2 border-0 bg-primary pt-7 pb-7 ps-5" type="search" placeholder="搜尋作品名稱、藝術家名稱"
+            aria-label="Search" width="288">
+          <i class="fa-solid fa-magnifying-glass text-black  pt-7 pb-7 ps-5 pe-8 "></i>
+        </form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0  align-items-center">
+          <li class="nav-item border-end pt-7 border-start pb-7 ps-8 pe-8">
+            <a class="nav-link " aria-current="page" href="#">探索</a>
+          </li>
+          <li class="nav-item border-end text-black pt-7 pb-7 ps-8 pe-8">
+            <a class="nav-link" href="#">市值</a>
+          </li>
+          <li class="nav-item dropdown  pt-7 pb-7 ps-8 pe-8">
+            <i class="fa-solid fa-wallet text-black"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- phone nav -->
+  <div class="collapse navbar-collapse   bg-light" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ps-3 border-top  d-lg-none pe-3 align-items-center text-center">
+      <li class="nav-item   border-bottom w-100  pt-5  pb-5 ">
+        <a class="nav-link text-black fw-bold fs-5 " aria-current="page" href="#">探索</a>
+      </li>
+      <li class="nav-item   w-100 border-bottom  pt-5 pb-5">
+        <a class="nav-link text-black fw-bold fs-5" href="#">市值</a>
+      </li>
+      <li class="nav-item dropdown w-100   pt-5 pb-5 ">
+        <a class="nav-link text-black fw-bold fs-5" href="#">連結錢包</a>
+      </li>
+    </ul>
+  </div>
+
+  <%- contents %>
+
+    <footer class="footer">
+      <p class="text-black text-center">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
