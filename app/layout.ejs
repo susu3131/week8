@@ -6,21 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>
-    <%- title %>
+    ART NFT
   </title>
+  <link rel="shortcut icon" , href="./assets/images/logo.svg" ,type="image" width="300">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
+  <div class="container  position-absolute top-0 start-0 z-index-100 ">
+    <form class="d-flex align-items-center  bg-primary " >
+      <i class="fa-solid fa-angle-left me-3 "></i>
+      <input class="form-control me-2 border-0 bg-primary ps-0 pe-0 pt-4 pb-4 " type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search"
+        width="288">
+      <i class="fa-solid fa-magnifying-glass "></i>
+    </form>
+  </div>
+
   <nav class="navbar  navbar-expand-lg navbar-light  bg-primary border-bottom pt-4 pb-4 pt-md-0 pb-md-0 ">
     <div class="container ">
-      <a class="navbar-brand flex-grow-1" href="index.html"><img class="w-50" src="./assets/images/logo.svg" alt=""
-          ></a>
+      <a class="navbar-brand flex-grow-1" href="index.html"><img class="w-50" src="./assets/images/logo.svg" alt=""></a>
       <div class="d-flex align-items-center">
-        <i class="fa-solid fa-magnifying-glass pe-5 text-black fs-5 d-md-none" ></i>
-        <button class="navbar-toggler p-0 border-0 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <i class="fa-solid fa-magnifying-glass pe-5 text-black fs-5 d-md-none"></i>
+        <button class="navbar-toggler p-0 border-0 fs-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -59,10 +69,12 @@
     </ul>
   </div>
 
+
+
   <%- contents %>
 
-    <footer class="footer">
-      <p class="text-black text-center">© ART NFT. All Rights Reserved</p>
+    <footer class="footer ">
+      <p class="text-black mt-5 mb-5 font-noto text-center">© ART NFT. All Rights Reserved</p>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>

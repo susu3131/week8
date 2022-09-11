@@ -8,6 +8,8 @@
 
 // font
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
 
 
 // base
@@ -22,8 +24,12 @@
 @import "./layout/header";
 @import "./layout/footer";
 
-// // components
-// @import "./components/..";
+// components
+@import "./components/hover";
+@import "./components/swiper";
+@import "./components/toggle";
+@import "./components/button";
+
 
 // // pages
 // @import "./pages/..";
