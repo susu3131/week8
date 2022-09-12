@@ -13158,4 +13158,13 @@ a {
   display: none;
 }
 
+.triangle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid #F0F0F0;
+}
+
 /*# sourceMappingURL=all.css.map */
