@@ -5,5 +5,12 @@
   right: 0;
   border-right: 16px solid  $secondary;
   border-top: 16px solid  $primary;
+  
+}
+
+
+.triangle-white::before{
+  border-top: 16px solid  $light;
 
 }
+

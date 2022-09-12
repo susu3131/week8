@@ -261,6 +261,7 @@ $spacers: (
   7: $spacer * 2.5, //40
   8: $spacer * 3, //48
   9: $spacer * 5, //80
+  10: $spacer * 4, //64
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -1095,8 +1096,8 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 $card-spacer-y:                     $spacer !default;
 $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
-$card-border-width:                 $border-width !default;
-$card-border-radius:                $border-radius !default;
+$card-border-width:                 0 !default;
+$card-border-radius:                0 !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                $card-spacer-y * .5 !default;
