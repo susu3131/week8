@@ -1,0 +1,15 @@
+.swiper-slide{
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+.swiper-slide-active{
+  transform: scale(1.2);
+  opacity: 1 !important;
+  filter: grayscale(0%);
+}
+
+
+.swiper{
+  height: 600px;
+}
+
