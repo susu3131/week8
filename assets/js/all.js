@@ -13,4 +13,14 @@ $(document).ready(function () {
     $(".navbar").toggle();
   });
 });
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 2.4,
+  spaceBetween: 80,
+  centeredSlides: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  }
+});
 //# sourceMappingURL=all.js.map

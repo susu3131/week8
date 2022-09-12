@@ -8777,7 +8777,7 @@ fieldset:disabled .btn {
 }
 
 .fs-8 {
-  font-size: 80 !important;
+  font-size: calc(1.625rem + 4.5vw) !important;
 }
 
 .fst-italic {
@@ -9979,7 +9979,7 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-sm-8 {
-    font-size: 80 !important;
+    font-size: calc(1.625rem + 4.5vw) !important;
   }
   .text-sm-start {
     text-align: left !important;
@@ -10899,7 +10899,7 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-md-8 {
-    font-size: 80 !important;
+    font-size: calc(1.625rem + 4.5vw) !important;
   }
   .text-md-start {
     text-align: left !important;
@@ -11819,7 +11819,7 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-lg-8 {
-    font-size: 80 !important;
+    font-size: calc(1.625rem + 4.5vw) !important;
   }
   .text-lg-start {
     text-align: left !important;
@@ -12739,7 +12739,7 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-xl-8 {
-    font-size: 80 !important;
+    font-size: calc(1.625rem + 4.5vw) !important;
   }
   .text-xl-start {
     text-align: left !important;
@@ -13659,7 +13659,7 @@ fieldset:disabled .btn {
     font-size: 0.875rem !important;
   }
   .fs-xxl-8 {
-    font-size: 80 !important;
+    font-size: calc(1.625rem + 4.5vw) !important;
   }
   .text-xxl-start {
     text-align: left !important;
@@ -13682,6 +13682,9 @@ fieldset:disabled .btn {
   .fs-3 {
     font-size: 1.5rem !important;
   }
+  .fs-8 {
+    font-size: 5rem !important;
+  }
   .fs-sm-1 {
     font-size: 3rem !important;
   }
@@ -13690,6 +13693,9 @@ fieldset:disabled .btn {
   }
   .fs-sm-3 {
     font-size: 1.5rem !important;
+  }
+  .fs-sm-8 {
+    font-size: 5rem !important;
   }
   .fs-md-1 {
     font-size: 3rem !important;
@@ -13700,6 +13706,9 @@ fieldset:disabled .btn {
   .fs-md-3 {
     font-size: 1.5rem !important;
   }
+  .fs-md-8 {
+    font-size: 5rem !important;
+  }
   .fs-lg-1 {
     font-size: 3rem !important;
   }
@@ -13708,6 +13717,9 @@ fieldset:disabled .btn {
   }
   .fs-lg-3 {
     font-size: 1.5rem !important;
+  }
+  .fs-lg-8 {
+    font-size: 5rem !important;
   }
 }
 
@@ -13776,10 +13788,34 @@ a {
   z-index: 100;
 }
 
+.bg-img {
+  background-position: center;
+  background-size: cover;
+}
+
 .writing {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.swiper-slide-active {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 1 !important;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.swiper {
+  height: 600px;
 }
 
 .index-nav-hide {
