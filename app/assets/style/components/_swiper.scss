@@ -1,15 +1,61 @@
 .swiper-slide{
   opacity: 0.5;
   filter: grayscale(100%);
+  
 }
 .swiper-slide-active{
-  transform: scale(1.2);
+  transform: scale(1.3);
   opacity: 1 !important;
   filter: grayscale(0%);
 }
 
 
-.swiper{
-  height: 600px;
+
+
+
+
+.swiper-pagination-bullet{
+  border-radius: 0px !important;
+  background: black !important ;
+  opacity: 1 !important;
+
+
+
+} 
+
+.swiper-pagination-bullet-active{
+  background-color: $secondary  !important;
+  width: 16px !important;
 }
 
+
+@include ipad-sm{
+  .swiper-slide-active{
+    transform: scale(1.2) !important ;
+
+  }
+
+  .swiper{
+    height: 400px;
+  }
+
+}
+
+@include ipad{
+  .swiper{
+    height: 450px;
+  }
+
+}
+
+@include web{
+  .swiper-slide-active{
+    transform: scale(1.2) !important ;
+
+  }
+
+  .swiper{
+    height: 570px;
+  }
+  
+}
