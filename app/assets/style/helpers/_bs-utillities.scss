@@ -53,6 +53,7 @@ $utilities: map-merge(
     // scss-docs-end utils-shadow
     // scss-docs-start utils-position
     "position": (
+      responsive: true,
       property: position,
       values: static relative absolute fixed sticky
     ),
@@ -148,9 +149,13 @@ $utilities: map-merge(
       values: (
         25: 25%,
         27: 27%,
+        30: 30%,
+        40: 40%,
         50: 50%,
         60: 60%,
         62: 62%,
+        65: 65%,
+        70: 70%,
         75: 75%,
         80: 80%,
         100: 100%,
