@@ -934,8 +934,8 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 $nav-link-font-size:                null !default;
 $nav-link-font-weight:              null !default;
-$nav-link-color:                    $link-color !default;
-$nav-link-hover-color:              $dark !default;
+$nav-link-color:                    $black !default;
+$nav-link-hover-color:              $secondary !default;
 $nav-link-transition:               color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out !default;
 $nav-link-disabled-color:           $gray-600 !default;
 
@@ -985,7 +985,7 @@ $navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://w
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                black !default;
-$navbar-light-hover-color:          rgba($black, .7) !default;
+$navbar-light-hover-color:          $secondary !default;
 $navbar-light-active-color:         rgba($black, .9) !default;
 $navbar-light-disabled-color:       rgba($black, .3) !default;
 $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;

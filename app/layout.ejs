@@ -11,47 +11,49 @@
   <link rel="shortcut icon" , href="./assets/images/logo.svg" ,type="image" width="300">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
-  <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
 <body>
   <!-- toggle -->
   <div class="container    z-index-100 search index-nav-hide">
-    <form class="d-flex align-items-center  bg-primary " >
+    <form class="d-flex align-items-center  bg-primary ">
       <i class="fa-solid fa-angle-left me-3 close "></i>
-      <input class="form-control me-2 border-0 bg-primary ps-0 pe-0 pt-4 pb-4 " type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search"
-        width="288">
+      <input class="form-control me-2 border-0 bg-primary ps-0 pe-0 pt-4 pb-4 " type="search" placeholder="搜尋作品名稱、藝術家名稱"
+        aria-label="Search" width="288">
       <i class="fa-solid fa-magnifying-glass close "></i>
     </form>
   </div>
 
   <nav class="navbar  navbar-expand-lg navbar-light  bg-primary border-bottom pt-4 pb-4 pt-lg-0 pb-lg-0 ">
     <div class="container ">
-      <a class="navbar-brand flex-grow-md-1 w-27" href="index.html"><img  src="./assets/images/logo.svg" alt="" ></a>
-      <div class="d-flex align-items-center">
-        <i class="fa-solid fa-magnifying-glass pe-5 text-black fs-5 d-md-none close"></i>
-        <button class="navbar-toggler p-0 border-0 fs-5" type="button" data-bs-toggle="collapse"
+      <a class="navbar-brand flex-grow-md-1 w-27" href="index.html"><img src="./assets/images/logo.svg" alt=""></a>
+      <div class="d-flex align-items-center ">
+        <i class="fa-solid fa-magnifying-glass pe-5 text-black fs-5 d-md-none close color-hover" ></i>
+        <button class="navbar-toggler p-0 border-0 fs-5 " type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse  flex-grow-0   " >
-        <form class="d-flex align-items-center  border-start  " >
-          <input class="form-control me-2 border-0 bg-primary pt-7 pb-7 ps-5   " type="search" placeholder="搜尋作品名稱、藝術家名稱"
-            aria-label="Search" size="42" >
+      <div class="collapse navbar-collapse  flex-grow-0   ">
+        <form class="d-flex align-items-center  border-start  ">
+          <input class="form-control me-2 border-0 bg-primary pt-7 pb-7 ps-5   " type="search"
+            placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search" size="42">
           <i class="fa-solid fa-magnifying-glass text-black  ps-lg-4 pe-lg-7 pt-7 pb-7 ps-xl-5 pe-xl-8 "></i>
         </form>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0  align-items-center ">
           <li class="nav-item border-end border-start  ">
-            <a class="nav-link  pt-7  pb-7 ps-md-5  pe-md-5 ps-xl-8  pe-xl-8 " aria-current="page" href="#">探索</a>
+            <a class="nav-link  pt-7  pb-7 ps-md-5  pe-md-5 ps-xl-8  pe-xl-8 " aria-current="page"
+              href="explore.html">探索</a>
           </li>
           <li class="nav-item border-end text-black ">
             <a class="nav-link pt-7 pb-7 ps-md-5  pe-md-5 ps-xl-8  pe-xl-8" href="#">市值</a>
           </li>
           <li class="nav-item dropdown  pt-7 pb-7 ps-md-5  pe-md-5 ps-xl-8  pe-xl-8">
-            <i class="fa-solid fa-wallet text-black"></i>
+            <i class="fa-solid fa-wallet text-black color-hover"></i>
           </li>
         </ul>
       </div>
@@ -61,12 +63,12 @@
   <div class="collapse navbar-collapse   bg-light" id="navbarSupportedContent">
     <ul class="navbar-nav me-auto ps-3 border-top  d-lg-none pe-3 align-items-center text-center">
       <li class="nav-item   border-bottom w-100  ">
-        <a class="nav-link text-black fw-bold fs-5  pt-5  pb-5 " aria-current="page" href="#">探索</a>
+        <a class="nav-link  fw-bold fs-5  pt-5  pb-5  " aria-current="page" href="explore.html">探索</a>
       </li>
       <li class="nav-item   w-100  ">
-        <a class="nav-link text-black fw-bold pt-5  pb-5 fs-5" href="#">市值</a>
+        <a class="nav-link  fw-bold pt-5  pb-5 fs-5" href="#">市值</a>
       </li>
-      <li class="nav-item dropdown w-100 bg-secondary  border border-1 mb-5 ">
+      <li class="nav-item dropdown w-100 bg-secondary  border border-1 mb-5 money-hover  ">
         <a class="nav-link  fw-bold fs-5 pt-3 pb-3  text-light" href="#">連結錢包</a>
       </li>
     </ul>
@@ -76,12 +78,18 @@
 
   <%- contents %>
 
-    <footer class="footer ">
-      <p class="text-black mt-5 mb-5 font-noto text-center">© ART NFT. All Rights Reserved</p>
+    <footer class="footer  border-top ">
+      <div class="border-top border-4 mt-2">
+        <p class="text-black mt-5 mb-5 font-noto text-center">© ART NFT. All Rights Reserved</p>
+      </div>
     </footer>
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
